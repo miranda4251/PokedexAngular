@@ -1,0 +1,105 @@
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .pokemons {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    right: -550px;
+    position: relative;
+  }
+  .pokemons li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .pokemons li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .pokemons li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .pokemons .text {
+    position: relative;
+    top: -3px;
+    
+  }
+  .pokemons .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: absolute;
+    left: -1px;
+    top: -0px;
+    height: 1.9em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .add{
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #123d54;
+        padding: 3px 20px;
+        margin-left: -50px;
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#afd9fa),
+            to(#588fad));
+        background: linear-gradient(
+            top,
+            #afd9fa 0%,
+            #588fad);
+        border-radius: 4px;
+        border: 2px solid #003366;
+        box-shadow:
+            0px 1px 3px rgba(000,000,000,0.5),
+            inset 0px 0px 1px rgba(255,255,255,1);
+        text-shadow:
+            0px -1px 0px rgba(000,000,000,0.7),
+            0px 1px 0px rgba(255,255,255,0.3);
+            text-decoration: none;
+            
+  }
+
+
+  .delete{
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #123d54;
+        padding: 3px 20px;
+        margin-left: 5px;
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#afd9fa),
+            to(#588fad));
+        background: linear-gradient(
+            top,
+            #afd9fa 0%,
+            #588fad);
+        border-radius: 4px;
+        border: 2px solid #003366;
+        box-shadow:
+            0px 1px 3px rgba(000,000,000,0.5),
+            inset 0px 0px 1px rgba(255,255,255,1);
+        text-shadow:
+            0px -1px 0px rgba(000,000,000,0.7),
+            0px 1px 0px rgba(255,255,255,0.3);
+            text-decoration: none;
+  }

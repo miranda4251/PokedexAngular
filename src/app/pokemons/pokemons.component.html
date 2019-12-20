@@ -1,0 +1,27 @@
+<h2>My Pokemons</h2>
+<ul class="pokemons">
+  <li *ngFor="let pokemon of pokemons">
+    <a routerLink="/detail/{{pokemon.id}}">
+      <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+    </a>
+  </li>
+</ul>
+
+<div>
+  <label>Pokemon name:
+    <input #pokemonName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="add" (click)="add(pokemonName.value); pokemonName.value=''">
+    add
+  </button>
+
+  <button class="delete" title="delete hero"
+  (click)="delete(hero)">Delete</button>
+</div>
+
+
+
+<app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
+
+
